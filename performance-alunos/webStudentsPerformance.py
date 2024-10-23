@@ -34,17 +34,17 @@ plt.xlabel('Pontuação')  # Rótulo do eixo X (valores de pontuação)
 plt.ylabel('Frequência')  # Rótulo do eixo Y (frequência de cada intervalo)
 
 # Construindo visualização no Streamlit
-st.write("# Performance de Estudantes")
+st.write("# Performance de Estudantes") # escreve um texto na interface (a # coloca a formatação de título)
 
-st.write("## Dataset Utilizado")
+st.write("## Dataset Utilizado") # (os dois ## são úteis para colocar subtítulo)
 st.dataframe(df)
-st.write("Fonte do Dataset: ")
+st.write("Fonte do Dataset: [Kaggle](https://www.kaggle.com/datasets/spscientist/students-performance-in-exams)") # dessa forma é posto um texto normal
 
 # Exibe o gráfico no Streamlit
 st.write("## Visualizações dos dados")
 
-st.write("### Barra Horizontal")
-st.pyplot(fig_barh)
+st.write("### Barra Horizontal") # (com ### seria "subsubtítulo")
+st.pyplot(fig_barh) # o pyplot serve para exibir o gráfico construído com matplotlib
 
 st.write("### Histograma")
 st.pyplot(fig_hist)
